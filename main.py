@@ -144,7 +144,7 @@ puppy = Puppy("Buba", 1, "Labrador", True)
 cat = Cat("Fiko", 3, "black")
 kitten = Kitten("Fisuka", 0.5, "white", True)
 
-owner = Owner("Gvantsa")
+owner = Owner("Marta")
 owner.add_pet(dog)
 owner.add_pet(cat)
 
