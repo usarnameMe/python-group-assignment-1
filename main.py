@@ -33,8 +33,14 @@ class Animal(ABC):
 
 
 class SoundMixin:
+    def __init__(self):
+        self.name = None
+
     def make_sound(self) -> None:
         print(f"{self.name} says {self.sound()}")
+
+    def sound(self):
+        pass
 
 
 class Dog(Animal, SoundMixin):
@@ -107,7 +113,7 @@ class Cat(Animal, SoundMixin):
 
 
 class Kitten(Cat):
-    def __init__(self, name: str, age: float, color: str, is_playful: bool) -> None:
+    def __init__(self, name: str, age: int, color: str, is_playful: bool) -> None:
         super().__init__(name, age, color)
         self.__is_playful: bool = is_playful
 
